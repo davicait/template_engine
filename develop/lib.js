@@ -1,9 +1,8 @@
-// Links
+// Links 
 const inquirer = require("inquirer");
 const util = require("util");
 
-
-// Terminal command line prompts
+// Terminal Prompts
 
 inquirer
   .prompt([
@@ -14,21 +13,19 @@ inquirer
     },
     {
       type: "password",
-      message: "What is your password?",
-      name: "password"
+      message: "What is your password",
+      name: "password",
     },
     {
       type: "password",
-      message: "Re-enter password to confirm:",
+      message: "Please re-enter password to confirm:",
       name: "confirm"
     }
   ])
   .then(function(response) {
-
     if (response.confirm === response.password) {
-      console.log("Success!");
-    }
-    else {
-      console.log("You forgot your password already?!");
+      console.log("Success");
+    } else {
+      console.log("You forgot your password already?");
     }
   });
