@@ -1,5 +1,4 @@
-function generateHTML(managerArr, enginArr, internArr) {
-    return `<!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,66 +19,44 @@ function generateHTML(managerArr, enginArr, internArr) {
   </div>
 </div>
     
-    ${managerArr
-    .map(member =>
-        `
-        <div class="row">
+    <div class="row">
   <div class="col-sm-3">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Manager</h5>
-        <p class="card-text">Name: ${member.name} </p>
+        <p class="card-text">Name: caitlynn </p>
         <p class="card-text">Position: Manager </p>
-        <p class="card-text">ID: ${member.id} </p>
-        <p class="card-text">Email: ${member.email} </p>
-        <p class="card-text">Office Number: ${member.officeNumber} </p>
+        <p class="card-text">ID: 222 </p>
+        <p class="card-text">Email: cddavis </p>
+        <p class="card-text">Office Number: 303 </p>
       </div>
     </div>
   </div>
-`
-.trim()
-    )
-    .join("")}
-    ${enginArr
-    .map(member =>
-`
-<div class="col-sm-3">
+    <div class="col-sm-3">
 <div class="card">
   <div class="card-body">
   <h5 class="card-title">Team Member</h5>
-  <p class="card-text">Name: ${member.name} </p>
+  <p class="card-text">Name: mike </p>
   <p class="card-text">Position: Engineer</p>
-  <p class="card-text">ID: ${member.id} </p>
-  <p class="card-text">Email: ${member.email} </p>
-  <p class="card-text">GitHub:<a href="https://github.com/${member.github}"> ${member.github}</a></p>
+  <p class="card-text">ID: 222 </p>
+  <p class="card-text">Email: mike </p>
+  <p class="card-text">GitHub:<a href="https://github.com/mike"> mike</a></p>
   </div>
 </div>
-</div>`
-    .trim()
-    )
-    .join("")}
-    ${internArr
-    .map(member =>
-        `
-        <div class="col-sm-3">
+</div>
+    <div class="col-sm-3">
 <div class="card">
   <div class="card-body">
   <h5 class="card-title">Team Member</h5>
-  <p class="card-text">Name: ${member.name} </p>
+  <p class="card-text">Name: hariet </p>
   <p class="card-text">Position: Intern</p>
-  <p class="card-text">ID: ${member.id} </p>
-  <p class="card-text">Email: ${member.email} </p>
-  <p class="card-text">School: ${member.school}</p>
+  <p class="card-text">ID: 399 </p>
+  <p class="card-text">Email: mdk </p>
+  <p class="card-text">School: hikll</p>
   </div>
 </div>
 </div>
 </div>
-    `.trim()
-    )
-    .join("")}
     
     </body>
-    </html>`;
-}
-
-module.exports = generateHTML;
+    </html>
