@@ -17,7 +17,7 @@ const internArr = [];
 const enginArr=[];
 const managerArr = [];
 
-// On app launch collect data, create new manager instance, push to team array, fires more function
+// On app launch collect data, create new manager instance, push to team array, fires the more function
 const generateTeam = () => {
   console.log(
     "Hello! You will be prompted to fill out various information about you and your team."
